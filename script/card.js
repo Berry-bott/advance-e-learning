@@ -23,8 +23,8 @@ const servicesCard = [
         bodyText: `Product Managers are responsible for the strategy, roadmap, and feature definition
          for a product or product line.
          `,
-        readMore: ` They work with 
-        cross-functional teams to ensure that the product meets the needs of the customers and aligns with the company's goals.,.`,
+        readMore: `such as its performance and capacity, which are measures of
+                     a website's speed and how much traffic the site can handle.`,
         button: "learn more"
     },
     {
