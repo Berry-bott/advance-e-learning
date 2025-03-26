@@ -1,6 +1,6 @@
 const servicesCard = [
     {
-        img: "./assets/blog-1.jpg",
+        img: "assets/blog-1.jpg",
         headText: 'Web Development',
         bodyText: `Web developers create and maintain websites.
                   They are also responsible for the site's technical aspects,`,
@@ -46,7 +46,7 @@ const servicesCard = [
         button: "learn more"
     },
     {
-        img: "./assets/services-4.jpg",
+        img: "assets/blog-1.jpg",
         headText: 'WEB DEVELOPMENT',
         bodyText: `Web developers create and maintain websites.
                   They are also responsible for the site's technical aspects,`,
