@@ -1,6 +1,6 @@
 const servicesCard = [
     {
-        img: "../assets/blog-1.jpg",
+        img: "./assets/blog-1.jpg",
         headText: 'Web Development',
         bodyText: `Web developers create and maintain websites.
                   They are also responsible for the site's technical aspects,`,
@@ -9,7 +9,7 @@ const servicesCard = [
         button: "learn more"
     },
     {
-        img: "../assets/coderigi.png",
+        img: "./assets/coderigi.png",
         headText: 'Graphic Design',
         bodyText: `Graphic Designers create visual concepts, using computer software or by hand, 
                   to communicate ideas `,
@@ -18,7 +18,7 @@ const servicesCard = [
         button: "learn more"
     },
     {
-        img: "../assets/services-1.jpg",
+        img: "./assets/services-1.jpg",
         headText: 'Product Management',
         bodyText: `Product Managers are responsible for the strategy, roadmap, and feature definition
          for a product or product line.
@@ -28,7 +28,7 @@ const servicesCard = [
         button: "learn more"
     },
     {
-        img: "../assets/services-2.jpg",
+        img: "./assets/services-2.jpg",
         headText: 'WEB DEVELOPMENT',
         bodyText: `Web developers create and maintain websites.
                   They are also responsible for the site's technical aspects,`,
@@ -37,7 +37,7 @@ const servicesCard = [
         button: "learn more"
     },
     {
-        img: "../assets/services-3.jpg",
+        img: "./assets/services-3.jpg",
         headText: 'WEB DEVELOPMENT',
         bodyText: `Web developers create and maintain websites.
                   They are also responsible for the site's technical aspects,`,
@@ -46,7 +46,7 @@ const servicesCard = [
         button: "learn more"
     },
     {
-        img: "../assets/services-4.jpg",
+        img: "./assets/services-4.jpg",
         headText: 'WEB DEVELOPMENT',
         bodyText: `Web developers create and maintain websites.
                   They are also responsible for the site's technical aspects,`,
