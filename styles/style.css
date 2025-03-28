@@ -6,16 +6,18 @@
     color: var(--color);
     /* outline: 1px solid ; */
 }
-html{
+
+html {
     overflow-x: hidden;
 }
+
 /* ====CSS VARIABLES==== */
 :root {
     --mainbackground: radial-gradient(#3BBDED 0%, #91db65 100%);
     --mainbackgroundOne: linear-gradient(90deg, #7aa7b8 0%, #51a123 100%);
     --box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
     --color: white;
-    --back: rgba(0, 0, 0, 0.7);
+    --back: rgba(0, 0, 0, 0.6);
     --black: rgba(0, 0, 0, 0.4);
     --mainText: 19px;
     --padding: 0 0 3rem 0;
@@ -24,9 +26,22 @@ html{
     --padding3: 10px 0;
     --padding4: 0 1rem;
     --padding5: 0 2rem;
+    --padding6: 1rem 0;
     --text-stroke: #3BBDED;
     --text-stroke: #2a0adf;
 
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: black;
+}
+
+#image {
+    position: absolute;
+    transition: transform 0.1s ease-out;
+    transform-style: preserve-3d;
 }
 
 /* ====THIS CONTROLS THE CENTERING OF THE DIV==== */
@@ -38,12 +53,15 @@ html{
 /* SECTIONS ==== */
 section {
     padding: 2rem 0 0 0;
-    margin-bottom: -4rem;
+    margin-bottom: -5rem;
 }
 
 .background {
     background-color: var(--color);
 
+    p,
+    h1,
+    h2,
     .color {
         color: var(--back);
     }
@@ -144,7 +162,7 @@ header {
     }
 }
 
-/* This is to control the buttons */
+/* ==== This is to control the buttons ==== */
 .btn {
     padding: var(--padding1);
     border-radius: 20px;
@@ -160,7 +178,7 @@ header {
     color: var(--back);
 }
 
-/* This is hover effect*/
+/* === This is hover effect ====*/
 .btn::before {
     content: '';
     position: absolute;
@@ -178,7 +196,7 @@ header {
     width: 100%;
 }
 
-/* HERO-SECTIONS */
+/* ==== HERO-SECTIONS ==== */
 
 .hero-section {
     display: grid;
@@ -273,23 +291,30 @@ header {
     font-size: 23px;
     letter-spacing: 2px;
     font-weight: 500;
-    line-height: 30px;
+    line-height: 25px;
     margin: 1rem 0 3rem 0;
     padding: var(--padding4);
     /* border: 1px solid #000; */
 }
 
 #img {
-    width: 80%;
+    width: 90%;
     height: 50%;
     object-fit: cover;
     margin-left: 3rem;
 }
 
+.hero-section .hero-img {
+    /* border: 1px solid #000; */
+}
+
 .hero-section .hero-img img {
-    height: 50%;
-    object-fit: contain;
+    /* height: 50%; */
+    margin-top: -2rem;
+    object-fit: cover;
     transition: 1s;
+    /* border: 1px solid #000; */
+
 }
 
 /* IMG HOVERING EFFECTS */
@@ -298,7 +323,11 @@ header {
     transition: 2s;
 }
 
+
 /*===== VERSIONS ======= */
+.version {
+    margin-top: -4px;
+}
 
 .versions {
     padding: 3rem 0;
@@ -339,7 +368,6 @@ header {
 
     .version-text {
         position: relative;
-        /* border: 1px solid #000; */
     }
 
     .version-text h2 {
@@ -350,12 +378,41 @@ header {
 
     p {
         font-size: 18px;
+        padding: var(--padding3);
     }
 }
 
 .versions-img:nth-child(2) img {
     float: right;
 }
+
+.version-row-card {
+    padding: var(--padding6);
+    width: 95%;
+    gap: 2rem;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-transform: capitalize;
+
+    .version-text {
+
+        h1 {
+            text-transform: capitalize;
+            padding: var(--padding3);
+            font-size: 20px;
+        }
+
+        p {
+            color: var(--black);
+            font-size: 15px;
+            font-weight: 100;
+        }
+    }
+}
+
+
+
 
 
 /* ===== SERVICES ==== */
@@ -374,6 +431,7 @@ header {
         text-align: center;
         font-weight: 900;
         padding: var(--padding);
+        margin-bottom: 2rem;
         text-transform: uppercase;
     }
 }
@@ -390,35 +448,39 @@ header {
     width: 300px;
     border-radius: 10px;
     z-index: 999;
-    .card-img{
+
+    .card-img {
         overflow: hidden;
         border-radius: 10px;
 
     }
+
     .card-img img {
         width: 100%;
-        height: 200px ;
+        height: 200px;
         object-fit: cover;
         margin: auto;
         transition: 1s all;
 
 
     }
-    .card-img img:hover{
+
+    .card-img img:hover {
         transition: 1s all;
-        transform: scale(1.2,1.2);
-        filter:blur(1px) ;
-        
+        transform: scale(1.2, 1.2);
+        filter: blur(1px);
+
     }
-    
+
 
     .card-header {
         font-weight: 800;
         margin-bottom: 1rem;
 
-        h2 {
+        .head-text {
             font-size: 20px;
             padding: var(--padding3);
+            text-transform: capitalize !important;
         }
 
         p {
@@ -426,9 +488,58 @@ header {
             font-size: 13px;
             letter-spacing: .2px;
         }
-        .read-more{
+
+        .read-more {
             display: none;
         }
     }
 
+}
+
+/*========== ABOUT US ========= */
+.about {
+    .about-container {
+        padding: 3rem 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+
+        .about-img {
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+            border-radius: 10%;
+        }
+
+        .about-img img {
+            height: 550px;
+
+            object-fit: contain;
+            border-radius: 20px;
+        }
+    }
+
+    .about-img img:hover {
+        filter: blur(2px);
+    }
+
+    .about-text {
+        /* box-shadow: 0px 2px 4px rgba(0,0,0,0.5); */
+        border-radius: 10%;
+        padding: 30px;
+
+        h1 {
+            font-size: 45px;
+            text-transform: capitalize;
+            font-weight: 800;
+            padding: var(--padding3);
+        }
+
+        h2 {
+            padding: var(--padding3);
+        }
+
+        p {
+            font-size: 20px;
+            padding: var(--padding3);
+        }
+    }
 }

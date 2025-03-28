@@ -14,7 +14,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
-<body class="gradient" style="font-family: 'Source Sans Pro', sans-serif;">
+<!-- Each class called gradient, background and color holds a 
+ special style changing the background-color and text color -->
+
+<body class="gradient">
     <header class="wrapper">
         <div class="logo">
             <h1 class="logo">Advance e-Learning.</h1>
@@ -28,8 +31,8 @@
             <button class="btn">Register</button>
         </nav>
     </header>
-    <!--Hero-->
 
+    <!--====== HERO--SECTION =====-->
     <section>
         <div class="hero-section wrapper">
             <!-- .HERO-TEXT -->
@@ -60,29 +63,27 @@
                     </ul>
                 </div> -->
             </div>
-
+            <!--==== HERO==IMG ===-->
             <div class="hero-img">
                 <div class="swipper color">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <img src="./assets/hero.png" alt="">
                         </div>
-                       
+
                         <div class="swiper-slide">
-                            <img src="./assets/illustration_plans_slp-removebg-preview.png" alt="" id="img">
+                            <img src="./assets/hero.png" alt="" id="img">
                         </div>
-                        
+
 
                     </div>
-
-                    <!-- Pagination -->
                     <div class="swiper-pagination"></div>
+
                 </div>
-                <!-- <img src="../assets/hero.png" alt=""> -->
             </div>
         </div>
     </section>
-    
+
     <div class="relative -mt-12 lg:-mt-24">
         <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -107,7 +108,7 @@
         </svg>
     </div>
 
-
+    <!--======= TEAMS VERSION ======= -->
     <main class="version background">
         <div class="versions  wrapper">
             <div class="version-heading ">
@@ -129,12 +130,12 @@
                     </p>
                 </div>
                 <div class="versions-img">
-                    <img src="./assets/gineo.png" alt="">
+                    <img src="./assets/gineo.png" alt="" id="skew">
                 </div>
             </article>
             <article class="version-card">
                 <div class="versions-img">
-                    <img src="./assets/world.png" alt="">
+                    <img src="./assets/world.png" alt="" id="skew">
                 </div>
                 <div class="version-text">
                     <h2 class="color">Leadership</h2>
@@ -148,29 +149,52 @@
 
             </article>
         </div>
-    </main>
-
-    <main class="background">
-        <div class="services  wrapper">
-            <div class="services-cont">
-            <div class="header-topic">
-                <h1 class="color">Our Services</h1>
-                <span class="lining "></span>
+        <div class="version-row-card">
+            <div class="version-text color">
+                <h1>WELCOME TO WHERE POSSIBILITY BEGIN</h1>
+                <p> Whether you want to learn a new skill, train your teams, or share what you know with the world, you
+                    are in the right place. As a leader in online learning we are here to help you achieve your goals
+                    and transform your life </p>
             </div>
-            <div class="swiper ">
-                <div class="swiper-wrapper display color">
-                
-                </div>
-
-                <!-- Navigation Buttons -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-
-                <!-- Pagination -->
-                <div class="swiper-pagination"></div>
+            <div class="version-text">
+                <h1>INCLUSIVE </h1>
+                <p> When people feel supported everyone benefits. We know that thing doesn't just happen, but we're
+                    dedicated to making it reality. We're building teams as diverse as the people who use our platform.
+                    That way, we learn to see things from every perspective.</p>
+            </div>
+            <div class="version-text">
+                <h1>CURIOUS </h1>
+                <p> Learning is who we are -- inside and outside. One reason we're so motivated to continue to open up
+                    learning worldwide is because we recognize the power it has fuel into the advance e-learning
+                    platform. We never stop evolving, and neither will you give up on your dreams.
+                    Join Advanced e-learning to make your dreams realistic. </p>
             </div>
 
         </div>
+
+    </main>
+
+    <main class="Our-services background">
+        <div class="services  wrapper">
+            <div class="services-cont">
+                <div class="header-topic">
+                    <h1 class="color">Our Services</h1>
+                    <span class="lining "></span>
+                </div>
+                <div class="swiper ">
+                    <div class="swiper-wrapper display color">
+
+                    </div>
+
+                    <!-- Navigation Buttons -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+
+                    <!-- Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
         </div>
 
     </main>
@@ -202,11 +226,39 @@
             </g>
         </g>
     </svg>
+    <main class="about">
+        <div class="about-container wrapper">
+            <div class="about-img">
+                <img src="./assets/coderigi.png" alt="" id="skew">
+            </div>
+            <div class="about-text">
+                <h1>What we stand for !</h1>
+                <div class="about-card">
+                    <p>We help organization of all types and sizes prepared for the paths ahead - wherever it leads. Our
+                        curated collection of business and technical courses help companies, governments, and
+                        non-profits go
+                        further by placing learning at the center of their strategies.</p>
+                    <h2> WORK WITH US</h2>
+                    <p>
+                        At advanced e-learning, we are all learners and instructors. Will live out our values everyday
+                        to create a culture that is diverse, inclusive, and committed to helping employees thrive.
+
+                    <h2>OUR RESEARCH</h2>
+                    <p>
+                        We're committed to improving lives through learning. Dig into our original research to learn
+                        about the forces that are shaping the modern workplace
+                    </p>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <!--Footer-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./script/swiper.js"></script>
-    <script src="./script/card.js"></script>
     <script src="./script/script.js" type="module" defer></script>
 </body>
 
