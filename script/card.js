@@ -1,6 +1,6 @@
  const servicesCard = [
     {
-        img: "assets/blog-1.jpg",
+        img: "assets/image5.jpg",
         headText: 'Online  Courses',
         bodyText: `Online courses offer a flexible, accessible, and affordable way for learners to acquirenew knowledge and skills. `,
         readMore: ` Whether for personal enrichment, professional development,
@@ -8,14 +8,14 @@
         button: "learn more"
     },
     {
-        img: "./assets/coderigi.png",
+        img: "./assets/image4.jpg",
         headText: 'Academic Support ',
         bodyText: ` We are responsible for contributing to student success by providing both academic help and`,
         readMore: ` personal guidance. They complement the modern online classroom experience, creating a more inclusive and supportive educational environment`,
         button: "learn more"
     },
     {
-        img: "./assets/services-1.jpg",
+        img: "./assets/image1.jpg",
         headText: 'Adaptive Learning And Assesment',
         bodyText: `approach in education that We offer adaptive learning and assessment to a      `,
         readMore: `transformative personalize learning experiences to meet individual needs. By leveraging data, algorithms, and AI, adaptive learning tailors content and pacing based on each learner's strengths, weaknesses, and progress. Similarly, adaptive assessments dynamically adjust
@@ -23,7 +23,7 @@
         button: "learn more"
     },
     {
-        img: "./assets/services-2.jpg",
+        img: "./assets/image3.jpg",
         headText: 'Microlearning & Bite-Sized Learning ',
         bodyText: `Web developers create and maintain websites.
                   They are also responsible for the`,
@@ -32,7 +32,7 @@
         button: "learn more"
     },
     {
-        img: "./assets/services-3.jpg",
+        img: "./assets/image2.jpg",
         headText: 'Communities And Forums',
         bodyText: `Web developers create and maintain websites.
                   They are also responsible for the site's technical aspects,`,
