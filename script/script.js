@@ -1,6 +1,10 @@
-import servicesCard from './card.js';
+import servicesCard from './servicesCard.js';
+import versionCard from './versionCard.js';
+import goalsCard from './goalsCard.js';
 
 console.log(servicesCard);
+
+// ===========  THIS IS LOOPING THE VERSION CARD AND DISPLAYING ON THE PAGE. =========== //
 
 let servicesCardHtml ='';
 
@@ -30,7 +34,51 @@ console.log(card.img);
     console.log(servicesCardHtml);
     
 });
-document.querySelector('.services-cont .display ').innerHTML=servicesCardHtml;
+document.querySelector('.services-cont .display ').innerHTML=servicesCardHtml; // output for services card
+
+
+
+// ======== THIS LOOP THROUGH THE VERSION CARD AND DISPLAYS ON THE PAGE =======//
+
+let versionCardHtml=[];
+
+versionCard.map((version)=>{
+    console.log(version);
+    
+    let html = `
+    
+     <article class="version-card">
+                <div class="version-text">
+                    <h2 class="color">${version.headText}</h2>
+                    <span class="lining "></span>
+            <p class="color">${version.bodyText}</p>
+                </div>
+                <div class="versions-img">
+                    <img src=${version.img} alt="" id="skew">
+                </div>
+            </article>
+
+    `
+    versionCardHtml += html;
+
+})
+document.querySelector('.versions').innerHTML = versionCardHtml;   //this display items on page 
+
+
+//Using this other array to loop the text in the services that display three cards
+let goalsCardHtml = [];
+goalsCard.map((goal)=>{
+    let html = `
+    
+      <div class="version-text color">
+                <h1>${goal.headTextRow}</h1>
+                <p> ${goal.bodyTextRow}</p>
+            </div>
+    
+    `
+    goalsCardHtml += html ;
+})
+document.querySelector('.goals-container').innerHTML = goalsCardHtml;
 
 
 // ====== IMAGE ROLLER ====== //
@@ -80,23 +128,3 @@ function animate() {
 
 animate();
 });
-// document.addEventListener("mouseover", (event) => {
-//     gsap.to(img, {
-//         x: event.clientX,
-//         y: event.clientY,
-//         duration: 0.3, // Adjust speed
-//         ease: "power2.out"
-//     });
-// });
-
-// let img = document.querySelectorAll("img");
-// img.forEach((img)=>{
-//     img.addEventListener("mousemove", function(event) {
-//         gsap.to(img, {
-//             x: event.clientX,
-//             y: event.clientY,
-//             duration: 0.3, // Adjust speed
-//             ease: "power2.out"
-//         });
-//     });
-// })
