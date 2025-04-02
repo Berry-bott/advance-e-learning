@@ -42,7 +42,7 @@ const servicesCard = [
         button: "learn more"
     },
     {
-        img: "./assets/image2.jpg",
+        img: "./assets/image4.jpg",
         headText: 'Analytics And Reporting',
         bodyText: `We offers valuable insights that drives informed decision-making and enhance teaching and learning experience. 
                     By systematically collecting, `,
@@ -54,6 +54,13 @@ const servicesCard = [
                     potential of analytics and reporting in education issues such as data privacy concerns, the need for adequate 
                     training for educators, and ensuring equitable access to technology must be addressed to maximize the benefits of
                     these tools. `,
+        button: "learn more"
+    },
+    {
+        img: "./assets/image8.jpg",
+        headText: 'Qualifications & Certifications',
+        bodyText: `Our qualifications and certifications are developed in collaboration with industry experts on the completion of courses `,
+        readMore: ` `,
         button: "learn more"
     },
 

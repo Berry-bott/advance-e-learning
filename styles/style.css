@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif !important;
     color: var(--color);
     /* outline: 1px solid ; */
 }
@@ -103,10 +103,13 @@ section {
 
 /* ===== HEADER ==== */
 header {
+    width: 100% !important;
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--padding3);
+    padding: var(--padding1) !important;
+    z-index: 999;
 
     .logo {
         font-size: 25px;
@@ -153,6 +156,12 @@ header {
     }
 }
 
+.scrolled {
+    background: var(--mainbackground) !important;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2) !important;
+
+}
+
 /* ==== This is to control the buttons ==== */
 .btn {
     padding: var(--padding1);
@@ -192,10 +201,12 @@ header {
 .hero-section {
     display: grid;
     grid-template-columns: 42% 58%;
+    padding-top: 3rem !important;
 }
 
 .hero-section .hero-text {
     h2 {
+        margin-top: 4rem !important;
         font-size: 1.4rem;
         width: 300px;
         font-weight: 900;
@@ -405,8 +416,9 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 0 2rem;
 
-    .goal-heading{
+    .goal-heading {
         position: relative;
     }
 
@@ -415,7 +427,6 @@ header {
     }
 
     .goals-container {
-        padding: var(--padding7);
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
@@ -516,55 +527,106 @@ header {
 
 }
 
-/*========== ABOUT US ========= */
-.about {
-    border: 1px solid #000;
 
-    .about-container {
-        border: 1px solid #000;
-        padding: var(--padding7);
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 30px;
-
-        .about-img {
-            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
-            border-radius: 10%;
-        }
-
-        .about-img img {
-            height: 550px;
-
-            object-fit: contain;
-            border-radius: 20px;
-        }
-    }
-
-    .about-img img:hover {
-        filter: blur(2px);
-    }
-
-    .about-text {
-        border-radius: 10%;
-        padding: 30px;
-
-        h1 {
-            font-size: 45px;
-            text-transform: capitalize;
-            font-weight: 800;
-            padding: var(--padding3);
-        }
-
-        h2 {
-            padding: var(--padding3);
-        }
-
-        p {
-            font-size: 20px;
-            padding: var(--padding3);
-        }
-    }
+/*========== Info section *< about &contact > ========= */
+.info {
+    margin: 3rem 0;
 }
+
+.info_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 3rem;
+}
+
+.info_container .about .about_container h1 {
+    font-size: 38px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: var(--padding6);
+}
+
+.about_container p {
+    font-size: 23px;
+    font-weight: 300;
+    line-height: 35px;
+    padding: var(--padding6);
+    width: 600px;
+}
+.contact{
+    width: 100% !important;
+}
+
+.contact_container{
+    width:90% !important ;
+}
+
+.contact_container h1 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.form_container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 47% 47%;
+    margin: 2rem 0;
+    gap:2rem;
+}
+
+.form_container input {
+    width: inherit !important;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: var(--back);
+    outline: none;
+
+
+}
+
+.whatsapp {
+    margin-top: -23px;
+    font-size: 13px;
+    border: 1px solid #fff;
+    padding: 4px 8px;
+    background-color: white;
+    color: var(--black);
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+ textarea {
+    outline: none;
+    border: none;
+    width: 100%;
+
+    /* max-width: 100% !important  ; */
+    height: 150px;
+    border-radius: 5px;
+    resize: none;
+    color: var(--back);
+    padding: 10px;
+}
+
+#submit {
+    margin-top: -1.5rem;
+    padding: 14px;
+}
+
+input:hover,
+textarea:hover {
+    background-color: transparent;
+    border: 1px solid var(--color);
+    color: var(--back);
+}
+
+#submit:hover,
+.whatsapp:hover {
+    background: var(--mainbackgroundOne);
+    color: var(--white);
+}
+
 
 /* ========= FOTTER =========*/
 
@@ -575,7 +637,7 @@ header {
     display: grid;
     gap: 3em;
     grid-template-columns: repeat(5, 1fr);
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
 
     .footer-logo {
@@ -604,5 +666,69 @@ header {
         font: 25px;
         letter-spacing: 2px;
         color: var(--black);
+    }
+}
+
+.bar {
+
+    display: none;
+}
+
+@media screen and (max-width:1215px) {
+    .hero-section {
+
+        /* padding: var(--padding7) !important; */
+    }
+
+    .hero-text {
+        .header-text {
+            font-size: 40px !important;
+            width: 100% !important;
+            text-align: left;
+        }
+
+        br {
+            display: none;
+        }
+
+        p {
+            padding: 0 !important;
+            font-size: 20px !important;
+            width: 100% !important;  
+        }
+    }
+
+    .hero-img {
+        margin-bottom: 2.5rem !important;
+    }
+
+}
+
+
+@media screen and (max-width:1090px) {
+    .bar {
+        display: block !important;
+        font-size: 25px;
+    }
+
+    nav {
+        display: none !important;
+    }
+
+    .hero-section {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-text {}
+
+    .hero-img {
+        width: 100% !important;
+
+        img {
+            width: inherit;
+        }
     }
 }

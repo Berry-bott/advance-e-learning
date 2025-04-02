@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="./script/all.js"></script>
 </head>
 
 <!-- Each class called gradient, background and color holds a 
@@ -19,8 +19,12 @@
 
 <body class="gradient">
     <header class="wrapper">
+        
         <div class="logo">
             <h1 class="logo">Advanced e-Learning</h1>
+        </div>
+        <div class="bar color ">
+            <span><i class="fa fa-bars"></i></span>
         </div>
         <nav>
             <a href="">home</a>
@@ -37,7 +41,7 @@
             <!-- .HERO-TEXT -->
             <div class="hero-text">
                 <h2>Education for the future.</h2>
-                <h1 class="header-text">Learn and explore to <br> acquire a vast knowledge in modern and
+                <h1 class="header-text">Learn and explore to <br class="br"> acquire a vast knowledge in modern and
                     standard education
                 </h1>
                 <p>Our goal is to provide flexible and effective learning and skill development to improve organizations
@@ -71,13 +75,13 @@
                         </div>
 
                         <div class="swiper-slide">
-                            <img src="./assets/hero.png" alt="" id="img">
+                            <img src="./assets/hero.png" alt="" >
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>
 
                 </div>
-            </div>
+
         </div>
     </section>
 
@@ -119,9 +123,9 @@
         <div class="goals background">
             <div class="goal-heading">
                 <h1 class="color">Our Goals</h1>
-                <span class="lining"></span> 
+                <span class="lining"></span>
             </div>
-            
+
             <div class="goals-container wrapper">
                 <div class="goals-text color">
                     <h1>${goal.headTextRow}</h1>
@@ -184,29 +188,42 @@
             </g>
         </g>
     </svg>
-    <main class="about">
-        <div class="about-container wrapper">
-            <div class="left-text">
-
+    
+    <!-- =====INfo section -->
+    <main class="info">
+        <div class="info_container wrapper">
+            <div class="about">
+                <div class="about_container">
+                    <h1>What we stand for !</h1>
+                    <p>
+                        At advanced e-learning, we are all learners and instructors. We improve our values and workforce
+                        everyday to create a culture that is diverse, inclusive, and committed to helping employees
+                        thrive. We are committed to improving lives through learning. Dig into our original research to
+                        learn
+                        about the forces that can shape the universe and everything in it.
+                    </p>
+                </div>
             </div>
-            <div class="about-text">
-                <h1>What we stand for !</h1>
-                <div class="about-card">
-                    <p>We help organization of all types and sizes prepared for the paths ahead - wherever it leads. Our
-                        curated collection of business and technical courses help companies, governments, and
-                        non-profits go
-                        further by placing learning at the center of their strategies.</p>
-                    <h2> WORK WITH US</h2>
-                    <p>
-                        At advanced e-learning, we are all learners and instructors. Will live out our values everyday
-                        to create a culture that is diverse, inclusive, and committed to helping employees thrive.
+            <div class="contact">
+                <div class="contact_container">
+                    <h4>let's Talk</h4>
+                    <h1>we would like to hear from you anytime</h1>
 
-                    <h2>OUR RESEARCH</h2>
-                    <p>
-                        We're committed to improving lives through learning. Dig into our original research to learn
-                        about the forces that are shaping the modern workplace
-                    </p>
-                    </p>
+                    <form action="https://formsubmit.co/johnbrown01.ng@gmail.com" method="post" class="form">
+                        <div class="form_container">
+                            <input type="text" name="firstname" placeholder="firstname" id="" required>
+                            <input type="text" name="lastname" placeholder="lastname" id="" required>
+                            <input type="text" name="email" placeholder="email"  id="" required>
+                            <input type="text" name="password" placeholder="password" id="" required>
+                            </div>
+                            <textarea name="" id="" required></textarea> <br>
+                            <div class="form_container">
+
+                            <input type="submit" name="" id="submit">
+                            <a href=" https://wa.me/+234705173919" class="whatsapp">Message Directly on whatsapp <br>
+                                +234 705 173 919 </a>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -214,34 +231,34 @@
 
     <!--Footer-->
     <footer>
-        <div class="footer-container  wrapper">
+        <div class="footer-container">
 
             <div class="footer-logo">
                 <h1 class="logo">Advanced e-Learning.</h1>
             </div>
-                <div class="para-link">
-                    <div class="para-text">LINKS</div>
-                    <a href="">FAG</a>
-                    <a href="">Help</a>
-                    <a href="">Supports</a>
-                </div>
-                <div class="para-link">
+            <div class="para-link">
+                <div class="para-text">LINKS</div>
+                <a href="">FAG</a>
+                <a href="">Help</a>
+                <a href="">Supports</a>
+            </div>
+            <div class="para-link">
                 <div class="para-text">LEGAL</div>
-                    <a href="">Teams</a>
-                    <a href="">Privacy</a>
-                </div>
-                <div class="para-link">
-                    <div class="para-text">SOCIALS</div>
-                    <a href="">Facebook</a>
-                    <a href="">Instagram</a>
-                    <a href="">Twitter</a>
-                </div>
-                <div class="para-link">
-                    <div class="para-text">COMPANY</div>
-                    <a href="">Official Blog</a>
-                    <a href="">About Us</a>
-                    <a href="">Contacts</a>
-                </div>
+                <a href="">Teams</a>
+                <a href="">Privacy</a>
+            </div>
+            <div class="para-link">
+                <div class="para-text">SOCIALS</div>
+                <a href="">Facebook</a>
+                <a href="">Instagram</a>
+                <a href="">Twitter</a>
+            </div>
+            <div class="para-link">
+                <div class="para-text">COMPANY</div>
+                <a href="">Official Blog</a>
+                <a href="">About Us</a>
+                <a href="">Contacts</a>
+            </div>
         </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
