@@ -17,8 +17,9 @@ document.addEventListener('DOMContentLoaded',()=>{
       // effect: 'fade',
       
       breakpoints: {
-        900: { slidesPerView: 3 },
-        400: { slidesPerView: 2 },
+        850: { slidesPerView: 3 },
+        // 850: { slidesPerView: 2 },
+        450: { slidesPerView: 2 },
         1024: { slidesPerView: 4},
         },
   

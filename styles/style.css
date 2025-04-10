@@ -449,7 +449,9 @@ header {
 /* ===== SERVICES ==== */
 
 .services {
-    padding: var(--padding7);
+    /* padding: var(--padding7); */
+    /* padding: 0 3rem ; */
+
 
     .header-topic {
         position: relative;
@@ -467,9 +469,18 @@ header {
     }
 }
 
+/* .swiper-wrapper{
+} */
+
 .swiper-slide {
     /* this is to space the slide*/
     padding: 2rem 0;
+    /* border: 1px solid #000; */
+    /* display: flex;    */
+    justify-content: center;
+    align-items: center;
+    /* width: 90% !important; */
+    margin: auto !important;
 }
 
 .card {
@@ -551,14 +562,15 @@ header {
     font-weight: 300;
     line-height: 35px;
     padding: var(--padding6);
-    width: 600px;
+    max-width: 600px;
 }
-.contact{
+
+.contact {
     width: 100% !important;
 }
 
-.contact_container{
-    width:90% !important ;
+.contact_container {
+    width: 90% !important;
 }
 
 .contact_container h1 {
@@ -571,7 +583,7 @@ header {
     align-items: center;
     grid-template-columns: 47% 47%;
     margin: 2rem 0;
-    gap:2rem;
+    gap: 2rem;
 }
 
 .form_container input {
@@ -596,7 +608,7 @@ header {
     text-decoration: none;
 }
 
- textarea {
+textarea {
     outline: none;
     border: none;
     width: 100%;
@@ -642,7 +654,7 @@ textarea:hover {
 
     .footer-logo {
         margin: 0 1rem;
-        width: 350px;
+        max-width: 350px;
 
         .logo {
             font-size: 25px;
@@ -674,6 +686,14 @@ textarea:hover {
     display: none;
 }
 
+@media screen and (max-width:1315px) {
+    .services .card {
+        max-width: 250px;
+    }
+}
+
+
+
 @media screen and (max-width:1215px) {
     .hero-section {
 
@@ -694,7 +714,7 @@ textarea:hover {
         p {
             padding: 0 !important;
             font-size: 20px !important;
-            width: 100% !important;  
+            width: 100% !important;
         }
     }
 
@@ -730,5 +750,102 @@ textarea:hover {
         img {
             width: inherit;
         }
+    }
+
+    .versions {
+        padding: var(--padding6) !important;
+    }
+
+    .version-card {
+        height: auto !important;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 2rem !important;
+    }
+
+    .version-card:nth-child(2) {
+        flex-direction: column-reverse !important;
+    }
+
+    .versions-img img {
+        width: 100%;
+        max-height: 350px !important;
+        object-fit: contain;
+    }
+
+    .version-card p {
+        margin-bottom: 4rem !important;
+    }
+
+    .goals-container {
+        display: grid;
+        grid-template-columns: 1fr !important;
+        gap: 2rem;
+    }
+
+    .services {
+        padding-top: 3rem !important;
+    }
+
+    .services .card {
+        /* max-width: 350px !important; */
+        margin:  auto !important;
+    }
+
+    .info_container{
+        grid-template-columns: 1fr !important;
+        /* gap: 0 !important; */
+    }
+    .info_container .about .about_container {
+        p,h1{
+
+            padding: var(--padding1) !important;
+        }
+    }
+    .info_container .contact .contact_container{
+        margin: auto !important;
+    }
+
+    .footer-container{
+        /* grid-template-columns: repeat(3,1fr); */
+        display: flex !important;
+        flex-wrap: wrap !important;
+        width: 100% !important;
+        gap: 1rem !important;
+        padding: var(--padding1);
+
+        margin: 1rem;
+        padding: var(--padding7);
+        display: grid;
+        gap: 3em;
+        grid-template-columns: repeat(5, 1fr);
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+
+
+@media screen and (max-width:850px){
+    .services .card {
+        max-width: 400px !important;
+        margin:  auto !important;
+    }
+}
+@media screen and (max-width:650px){
+    .services .card {
+        max-width: 240px !important;
+        margin:  auto !important;
+    }
+}
+@media screen and (max-width:535px){
+    .services .card {
+        max-width: 210px !important;
+        margin:  auto !important;
+    }
+}
+@media screen and (max-width:450px){
+    .services .card {
+        max-width: 450px !important;
+        margin:  auto !important;
     }
 }

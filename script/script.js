@@ -100,7 +100,7 @@ img.addEventListener("mousemove", (event) => {
     targetY = -y * 20; // Rotation effect
 
     skewX = x * 25; // Skew left/right
-    skewY = y * 25; // Skew up/down
+    skewY = y * 25; // Skew up/down        
 });
 
 img.addEventListener("mouseleave", () => {
