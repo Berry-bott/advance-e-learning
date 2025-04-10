@@ -7,9 +7,6 @@
     /* outline: 1px solid ; */
 }
 
-html {
-    overflow-x: hidden;
-}
 body{
     overflow-x: hidden;
 
@@ -842,13 +839,13 @@ textarea:hover {
     }
 }
 @media screen and (max-width:650px){
-
+  
     .hero-section .hero-text {
 
         .header-text{
 
             width: 100% !important;
-            font-size: 28px !important;
+            font-size: 29px !important;
             line-height: 29px !important;
         }
         .br{
