@@ -843,7 +843,6 @@ textarea:hover {
 
         .header-text{
 
-            border: 1px solid #000 !important;
             width: 100% !important;
             font-size: 29px !important;
             line-height: 29px !important;
@@ -851,7 +850,6 @@ textarea:hover {
         .br{
             
             display: none !important;
-            border: 1px solid #000 !important;
         }
     }
     .services .card {
