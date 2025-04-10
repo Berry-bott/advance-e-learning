@@ -744,7 +744,7 @@ textarea:hover {
         padding: var(--padding1);
     }
 
-    .hero-text {}
+   
 
     .hero-img {
         width: 100% !important;
@@ -839,6 +839,21 @@ textarea:hover {
     }
 }
 @media screen and (max-width:650px){
+    .hero-section .hero-text {
+
+        .header-text{
+
+            border: 1px solid #000 !important;
+            width: 100% !important;
+            font-size: 29px !important;
+            line-height: 29px !important;
+        }
+        .br{
+            
+            display: none !important;
+            border: 1px solid #000 !important;
+        }
+    }
     .services .card {
         max-width: 240px !important;
         margin:  auto !important;
@@ -848,6 +863,7 @@ textarea:hover {
         gap: 2rem;
         
     }
+
 }
 @media screen and (max-width:535px){
     .services .card {
