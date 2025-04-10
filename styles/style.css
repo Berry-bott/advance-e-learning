@@ -842,17 +842,18 @@ textarea:hover {
         max-width: 240px !important;
         margin:  auto !important;
     }
+    .form_container {
+        grid-template-columns: 1fr !important;
+        gap: 2rem;
+        
+    }
 }
 @media screen and (max-width:535px){
     .services .card {
         max-width: 210px !important;
         margin:  auto !important;
     }
-    .form_container {
-        grid-template-columns: 1fr !important;
-        gap: 2rem;
-        
-    }
+ 
 }
 @media screen and (max-width:450px){
     .services .card {
