@@ -741,6 +741,7 @@ textarea:hover {
         flex-direction: column !important;
         justify-content: center;
         align-items: center;
+        padding: var(--padding1);
     }
 
     .hero-text {}
