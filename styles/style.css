@@ -10,7 +10,10 @@
 html {
     overflow-x: hidden;
 }
+body{
+    overflow-x: hidden;
 
+}
 /* ====CSS VARIABLES==== */
 :root {
     --mainbackground: radial-gradient(#3BBDED 0%, #91db65 100%);
@@ -839,6 +842,7 @@ textarea:hover {
     }
 }
 @media screen and (max-width:650px){
+
     .hero-section .hero-text {
 
         .header-text{
