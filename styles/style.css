@@ -836,6 +836,10 @@ textarea:hover {
 }
 
 @media screen and (max-width:850px){
+
+    .logo{
+        font-size: 22px !important;
+    }
     .services .card {
         max-width: 400px !important;
         margin:  auto !important;
@@ -848,7 +852,7 @@ textarea:hover {
         .header-text{
 
             width: 100% !important;
-            font-size: 29px !important;
+            font-size: 28px !important;
             line-height: 29px !important;
         }
         .br{
@@ -856,10 +860,17 @@ textarea:hover {
             display: none !important;
         }
     }
+    .version{
+        padding-top: 3rem !important;
+    }
     .services .card {
         max-width: 240px !important;
         margin:  auto !important;
     }
+.about_container h1{
+    font-size: 29px !important;
+}
+
     .form_container {
         grid-template-columns: 1fr !important;
         gap: 2rem;
