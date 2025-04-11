@@ -587,7 +587,6 @@ header {
     grid-template-columns: 48% 48%;
     margin: 2rem 0;
     gap: 1.3rem;
-    border: 1px solid #000;
 }
 
 .form_container input {
@@ -621,7 +620,6 @@ textarea {
     resize: none;
     color: var(--back);
     padding: 10px;
-    border: 1px solid #000;
 }
 
 #submit {
@@ -644,9 +642,7 @@ textarea:hover {
 
 
 /* ========= FOTTER =========*/
-footer{
-    border: 1px solid #000;
-}
+
 .footer-container {
     width: 100% !important;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
@@ -657,7 +653,6 @@ footer{
     grid-template-columns: repeat(5, 1fr);
     justify-content: center;
     align-items: flex-start;
-    border: 1px solid #fd2020;
 
     .footer-logo {
         margin: 0 1rem;
@@ -702,10 +697,7 @@ footer{
 
 
 @media screen and (max-width:1215px) {
-    .hero-section {
 
-        /* padding: var(--padding7) !important; */
-    }
 
     .hero-text {
         .header-text {
@@ -843,7 +835,6 @@ footer{
     }
 }
 
-
 @media screen and (max-width:850px){
     .services .card {
         max-width: 400px !important;
@@ -851,9 +842,7 @@ footer{
     }
 }
 @media screen and (max-width:650px){
-    *{
-        outline: 1px solid;
-    }
+
     .hero-section .hero-text {
 
         .header-text{
@@ -875,6 +864,9 @@ footer{
         grid-template-columns: 1fr !important;
         gap: 2rem;
         
+    }
+    .whatsapp{
+        text-align: center;
     }
 
 }
