@@ -1,15 +1,13 @@
-import servicesCard from './servicesCard.js';
+import servicesCard from './servicesCardData.js';
 import versionCard from './versionCard.js';
 import goalsCard from './goalsCard.js';
 
-console.log(servicesCard);
 
 // ===========  THIS IS LOOPING THE VERSION CARD AND DISPLAYING ON THE PAGE. =========== //
 
-let servicesCardHtml ='';
+let servicesCardHtml = '';
 
 servicesCard.forEach((card) => {
-console.log(card.img);
 
     let html = `
 <div class="swiper-slide">  
@@ -21,30 +19,48 @@ console.log(card.img);
             <div class="card-header">
                 <h2 class="head-text color ">${card.headText}</h2>
                 <div class="card-body ">
-                <p>  ${card.bodyText}</p>
+                <p> ${card.bodyText}</p>
                 </div>
             </div>
-            <button class="btn"> ${card.button}</button>
+             <button class="btn js-btn" 
+             data-link="${card.link}"> Learn More</button>
         </div>
     </div>
 </div>
     
     `
-    servicesCardHtml+=html;
-    console.log(servicesCardHtml);
-    
+    servicesCardHtml += html;
+
 });
-document.querySelector('.services-cont .display ').innerHTML=servicesCardHtml; // output for services card
+document.querySelector('.services-cont .display ').innerHTML = servicesCardHtml; // output for services card
+
+
+
+function clickBtn() {
+
+    document.querySelectorAll('.js-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            btn.getAttribute('data-link')
+            let data = btn.dataset.link;
+            if (data) {
+                window.location.href = data;
+            }
+        })  
+
+    });
+}
+clickBtn()
+
+
 
 
 
 // ======== THIS LOOP THROUGH THE VERSION CARD AND DISPLAYS ON THE PAGE =======//
 
-let versionCardHtml=[];
+let versionCardHtml = [];
 
-versionCard.map((version)=>{
-    console.log(version);
-    
+versionCard.map((version) => {
+
     let html = `
     
      <article class="version-card">
@@ -56,8 +72,7 @@ versionCard.map((version)=>{
                 <div class="versions-img">
                     <img src=${version.img} alt="" id="skew">
                 </div>
-            </article>
-
+     </article>
     `
     versionCardHtml += html;
 
@@ -65,75 +80,76 @@ versionCard.map((version)=>{
 document.querySelector('.versions').innerHTML = versionCardHtml;   //this display items on page 
 
 
+// =====GOALS CARDS==========
+
 //Using this other array to loop the text in the services that display three cards
 let goalsCardHtml = [];
-goalsCard.map((goal)=>{
+goalsCard.map((goal) => {
     let html = `
     
-      <div class="version-text color">
-                <h1>${goal.headTextRow}</h1>
-                <p> ${goal.bodyTextRow}</p>
-            </div>
-    
+<div class="version-text color">
+        <h1>${goal.headTextRow}</h1>
+        <p> ${goal.bodyTextRow}</p>
+</div>
     `
-    goalsCardHtml += html ;
+    goalsCardHtml += html;
 })
 document.querySelector('.goals-container').innerHTML = goalsCardHtml;
 
 
+
 // ====== IMAGE ROLLER ====== //
-// let img = document.getElementById("skew");
 document.querySelectorAll("#skew").forEach(img => {
-let targetX = 0, targetY = 0;
-let skewX = 0, skewY = 0;
-let currentX = 0, currentY = 0, currentSkewX = 0, currentSkewY = 0;
-const smoothness = 0.15;
-let isMouseOver = false;
+    let targetX = 0, targetY = 0;
+    let skewX = 0, skewY = 0;
+    let currentX = 0, currentY = 0, currentSkewX = 0, currentSkewY = 0;
+    const smoothness = 0.15;
+    let isMouseOver = false;
 
-img.addEventListener("mousemove", (event) => {
-    isMouseOver = true;
-    let rect = img.getBoundingClientRect();
-    let x = (event.clientX - rect.left) / rect.width - 0.5; // Normalize [-0.5, 0.5]
-    let y = (event.clientY - rect.top) / rect.height - 0.5;
-    
-    targetX = x * 20; // Rotation effect
-    targetY = -y * 20; // Rotation effect
+    img.addEventListener("mousemove", (event) => {
+        isMouseOver = true;
+        let rect = img.getBoundingClientRect();
+        let x = (event.clientX - rect.left) / rect.width - 0.5; // Normalize [-0.5, 0.5]
+        let y = (event.clientY - rect.top) / rect.height - 0.5;
 
-    skewX = x * 25; // Skew left/right
-    skewY = y * 25; // Skew up/down        
-});
+        targetX = x * 20; // Rotation effect
+        targetY = -y * 20; // Rotation effect
 
-img.addEventListener("mouseleave", () => {
-    isMouseOver = false;
-});
+        skewX = x * 25; // Skew left/right
+        skewY = y * 25; // Skew up/down        
+    });
 
-function animate() {
-    if (!isMouseOver) {
-        targetX = 0;
-        targetY = 0;
-        skewX = 0;
-        skewY = 0;
+    img.addEventListener("mouseleave", () => {
+        isMouseOver = false;
+    });
+
+    function animate() {
+        if (!isMouseOver) {
+            targetX = 0;
+            targetY = 0;
+            skewX = 0;
+            skewY = 0;
+        }
+
+        // Smooth movement
+        currentX += (targetX - currentX) * smoothness;
+        currentY += (targetY - currentY) * smoothness;
+        currentSkewX += (skewX - currentSkewX) * smoothness;
+        currentSkewY += (skewY - currentSkewY) * smoothness;
+
+        img.style.transform = `rotateX(${currentY}deg) rotateY(${currentX}deg) skew(${currentSkewX}deg, ${currentSkewY}deg)`;
+
+        requestAnimationFrame(animate);
     }
 
-    // Smooth movement
-    currentX += (targetX - currentX) * smoothness;
-    currentY += (targetY - currentY) * smoothness;
-    currentSkewX += (skewX - currentSkewX) * smoothness;
-    currentSkewY += (skewY - currentSkewY) * smoothness;
-
-    img.style.transform = `rotateX(${currentY}deg) rotateY(${currentX}deg) skew(${currentSkewX}deg, ${currentSkewY}deg)`;
-
-    requestAnimationFrame(animate);
-}
-
-animate();
+    animate();
 });
 
 
-
-window.addEventListener("scroll", function() {
+// WINDIOW SCROLL
+window.addEventListener("scroll", function () {
     let navbar = document.querySelector("header");
-    if (window.scrollY > 0) { 
+    if (window.scrollY > 0) {
         navbar.classList.add("scrolled");
     } else {
         navbar.classList.remove("scrolled");

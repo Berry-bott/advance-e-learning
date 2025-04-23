@@ -10,10 +10,12 @@
 html {
     overflow-x: hidden;
 }
-body{
+
+body {
     /* overflow-x: hidden; */
 
 }
+
 /* ====CSS VARIABLES==== */
 :root {
     --mainbackground: radial-gradient(#3BBDED 0%, #91db65 100%);
@@ -786,25 +788,25 @@ textarea:hover {
     }
 
     .services .card {
-        margin:  auto !important;
+        margin: auto !important;
     }
 
-    .info_container{
+    .info_container {
         grid-template-columns: 1fr !important;
     }
+
     .info_container .about .about_container {
-        p,h1{
+
+        p,
+        h1 {
 
             padding: var(--padding1) !important;
         }
     }
-    .info_container .contact .contact_container{
+
+    .info_container .contact .contact_container {
         margin: auto !important;
 
-    }
-
-    .about_container h1{
-        text-align: center;
     }
 
     .about_container p {
@@ -822,75 +824,93 @@ textarea:hover {
         gap: 1rem;
     }
 
-    .footer-container{
+    .footer-container {
         display: flex !important;
         justify-content: space-between !important;
         flex-wrap: wrap !important;
         gap: 2rem !important;
         padding: 2rem !important;
 
-        .footer-logo{
+        .footer-logo {
             margin-left: 0 !important;
         }
     }
 }
 
-@media screen and (max-width:850px){
+@media screen and (max-width:850px) {
 
-    .logo{
+    .logo {
         font-size: 22px !important;
     }
+
     .services .card {
         max-width: 400px !important;
-        margin:  auto !important;
+        margin: auto !important;
     }
 }
-@media screen and (max-width:650px){
+
+@media screen and (max-width:650px) {
 
     .hero-section .hero-text {
 
-        .header-text{
+        .header-text {
 
             width: 100% !important;
             font-size: 28px !important;
             line-height: 29px !important;
         }
-        .br{
-            
+
+        .br {
+
             display: none !important;
         }
     }
-    .version{
+
+    .version {
         padding-top: 3rem !important;
     }
+
     .services .card {
         max-width: 240px !important;
-        margin:  auto !important;
+        margin: auto !important;
     }
-.about_container h1{
-    font-size: 29px !important;
-}
+
+    .about_container h1 {
+        font-size: 29px !important;
+    }
 
     .form_container {
         grid-template-columns: 1fr !important;
         gap: 2rem;
-        
+
     }
-    .whatsapp{
+
+    .whatsapp {
         text-align: center;
     }
 
 }
-@media screen and (max-width:535px){
+
+@media screen and (max-width:535px) {
     .services .card {
         max-width: 210px !important;
-        margin:  auto !important;
+        margin: auto !important;
     }
- 
+
 }
-@media screen and (max-width:450px){
+
+@media screen and (max-width:450px) {
     .services .card {
         max-width: 450px !important;
-        margin:  auto !important;
+        margin: auto !important;
+    }
+
+    .about_container h1 {
+        font-size: 26px !important;
+        font-weight: 700 !important;
+    }
+
+    .about_container p{
+        font-size: 20px !important;
     }
 }
