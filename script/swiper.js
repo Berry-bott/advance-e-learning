@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     const swiper = new Swiper('.swiper', {
       loop: true,          // Enables infinite scrolling
       autoplay: {
-        delay: 3000,       // Auto slides every 3 seconds
+        delay: 20000,       // Auto slides every 3 seconds
       },
       pagination: {
         el: '.swiper-pagination',
