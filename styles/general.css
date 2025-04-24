@@ -145,6 +145,9 @@ textarea {
 
     }
 
+    .online_courses_container{
+        padding: 8rem 0 !important;
+    }
 
     .online_courses_text{
         width: 85%;
