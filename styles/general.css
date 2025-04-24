@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.online_courses{
+    /* padding: 1rem 0;  */
+    /* display: flex; */
+    justify-content: center;
+    /* align-items: center; */
+    /* margin-bottom: -4rem; */
+    position: relative;
+    height: 100vh !important;
+
+}
+.online_courses_img{
+    /* display: flex; */
+}
+.online_courses_img img{
+    width: 100%; 
+    height: 100vh !important;
+    /* height: 500px; */
+    object-fit: cover;
+}
+
+
+
+
+
+.contact_info {
+    position: absolute;
+    bottom: 0;
+    right: 1rem;
+}
+
+
+.contact_info_container h4{
+    color: var(--white) !important;
+}
+.contact_info_container h1 {
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--white) !important;
+}
+
+.form_container_info {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 48% 48%;
+    margin: 10px 0;
+    height: auto;
+    gap: 1.3rem;
+}
+
+.form_container_info  input {
+    max-width: 100% !important;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: var(--back);
+    outline: none;
+
+
+}
+
+.whatsapp_info {
+    margin-top: -23px;
+    font-size: 13px;
+    border: 1px solid #fff;
+    padding: 4px 8px;
+    background-color: white;
+    color: var(--black);
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+textarea {
+    outline: none;
+    border: none;
+    min-width: 100% !important;
+    height: 150px;
+    border-radius: 5px;
+    resize: none;
+    color: var(--back);
+    padding: 10px;
+}
+
+#submit {
+    margin-top: -1.5rem;
+    padding: 14px;
+}
+
+
+    #submit:hover,
+    .whatsapp:hover {
+        background: var(--mainbackgroundOne);
+        color: var(--white);
+    }
+
+
+
+.online_courses_container{
+    padding: 6rem 0 !important;
+}
+
+.online_courses_text{
+    width: 70%;
+    margin:0  auto;
+}
+
+.online_courses_text h1{
+    padding: 2rem 0;
+    font-weight: 900;
+}
+
+.online_courses_text p{
+    padding: 1rem 0;
+}
+
+@media screen and (max-width:700px) {
+    .online_courses_img img{
+        height: 120vh !important;
+    }
+
+    .contact_info{
+        /* width: 400px !important; */
+        left: 1rem !important;
+        /* right: 0 !important;     */
+        /* top: 8rem !important; */
+        bottom: -8rem !important;
+    }
+    .form_container_info{
+        grid-template-columns: 1fr !important;
+        margin: auto !important ;
+    }
+
+    
+textarea {
+ 
+    margin: 15px 0 5px 0 !important;
+}
+    .form_container {
+        grid-template-columns: 1fr !important;
+        gap: 2rem;
+
+    }
+
+
+    .online_courses_text{
+        width: 85%;
+        margin:0 auto;
+    }
+}

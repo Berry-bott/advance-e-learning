@@ -2,9 +2,10 @@ const servicesCard = [
     {
         img: "assets/image6.jpg",
         headText: 'Online  Courses',
-        bodyText: `Online courses offer a flexible, accessible, and affordable way for learners to acquirenew knowledge and skills. Whether for personal`,
+        bodyText: `Online courses offer a flexible, accessible, and affordable way for learners to acquire new knowledge and skills. Whether for personal`,
         readMore: `  enrichment, professional development,
-                  or formal education, they have become a valuable resource in modern learning environments.`,
+                  or formal education, they have become a valuable resource in modern learning environments.
+                   From mastering technical skills like programming and data analysis to exploring creative fields such as writing or photography, there's an online course for virtually every interest.`,
         button: "learn more",
         id:1,
         link: 'public/online-courses.html'
@@ -66,7 +67,7 @@ const servicesCard = [
         id:6
     },
     {
-        img: "./assets/image8.jpg",
+        img: "./assets/certification.jpg",
         headText: 'Qualifications & Certifications',
         bodyText: `Our qualifications and certifications are developed in collaboration with industry experts on the completion of courses `,
         readMore: ` `,

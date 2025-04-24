@@ -9,6 +9,7 @@
 
 html {
     overflow-x: hidden;
+    scroll-behavior: smooth ;
 }
 
 body {
@@ -69,7 +70,7 @@ section {
     h2,
     h4,
     .color {
-        color: var(--back);
+        color: var(--back) !important;
     }
 }
 
@@ -321,11 +322,12 @@ header {
 
 /*===== VERSIONS ======= */
 .version {
-    margin-top: -4px;
+    margin-top: -5px;
+    padding-top: 5rem;
 }
 
 .versions {
-    padding: var(--padding7);
+    /* padding: var(--padding7); */
     width: 70%;
     display: flex;
     justify-content: center;
@@ -390,38 +392,13 @@ header {
     float: right;
 }
 
-/* .version-row-card {
-    padding: var(--padding6);
-    width: 75%;
-    gap: 2rem;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    text-transform: capitalize;
-
-    .version-text {
-
-        h1 {
-            text-transform: capitalize;
-            padding: var(--padding3);
-            font-size: 20px;
-        }
-
-        p {
-            color: var(--black);
-            font-size: 15px;
-            font-weight: 100;
-        }
-    }
-} */
-
 .goals {
-    padding: var(--padding7);
+
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 0 2rem;
+    padding: 5rem 2rem 0 2rem;
 
     .goal-heading {
         position: relative;
@@ -454,8 +431,7 @@ header {
 /* ===== SERVICES ==== */
 
 .services {
-    /* padding: var(--padding7); */
-    /* padding: 0 3rem ; */
+padding-top: 5rem;
 
 
     .header-topic {
@@ -546,20 +522,20 @@ header {
 
 /*========== Info section *< about &contact > ========= */
 .info {
-    margin: 3rem 0;
-}
+    padding: 5rem 0 0 0;
+    }
 
 .info_container {
     display: grid;
     grid-template-columns: 1fr 1fr !important;
-    gap: 3rem;
+    gap: 2rem;
 }
 
 .info_container .about .about_container h1 {
     font-size: 38px;
     font-weight: 400;
     text-transform: uppercase;
-    padding: var(--padding6);
+    /* padding: var(--padding6);     */
 }
 
 .about_container p {
@@ -613,7 +589,7 @@ header {
     text-decoration: none;
 }
 
-textarea {
+#textarea {
     outline: none;
     border: none;
     min-width: 100% !important;
@@ -629,8 +605,8 @@ textarea {
     padding: 14px;
 }
 
-input:hover,
-textarea:hover {
+.form_container input:hover,
+#textarea:hover {
     background-color: transparent;
     border: 1px solid var(--color);
     color: var(--back);

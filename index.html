@@ -27,16 +27,18 @@
             <span><i class="fa fa-bars"></i></span>
         </div>
         <nav>
-            <a href="">home</a>
-            <a href="">versions</a>
-            <a href="">Our Goals</a>
-            <a href="">services</a>
-            <button class="btn">Register</button>
+            <a href="#hero_section">home</a>
+            <a href="#version">versions</a>
+            <a href="#goals">Our Goals</a>
+            <a href="#services">services</a>
+            <a href="#contact">
+                <button class="btn">Contact</button>
+            </a>
         </nav>
     </header>
 
     <!--====== HERO--SECTION =====-->
-    <section>
+    <section id="hero_section">
         <div class="hero-section wrapper">
             <!-- .HERO-TEXT -->
             <div class="hero-text">
@@ -110,7 +112,7 @@
     </div>
 
     <!--======= TEAMS VERSION ======= -->
-    <main class="version background">
+    <main class="version background"  id="version">
         <div class="version-heading ">
             <h1 class="color"> Our Visions</h1>
             <span class="lining "></span>
@@ -119,7 +121,7 @@
         </div>
     </main>
 
-    <main>
+    <main id="goals">
         <div class="goals background">
             <div class="goal-heading">
                 <h1 class="color">Our Goals</h1>
@@ -136,7 +138,7 @@
         </div>
     </main>
 
-    <main class="Our-services background">
+    <main class="Our-services background" id="services">
         <div class="services  wrapper">
             <div class="services-cont">
                 <div class="header-topic">
@@ -190,7 +192,7 @@
     </svg>
     
     <!-- =====INfo section -->
-    <main class="info">
+    <main class="info" id="contact">
         <div class="info_container wrapper">
             <div class="about">
                 <div class="about_container">
@@ -214,9 +216,9 @@
                             <input type="text" name="firstname" placeholder="firstname" id="" required>
                             <input type="text" name="lastname" placeholder="lastname" id="" required>
                             <input type="text" name="email" placeholder="email"  id="" required>
-                            <input type="date" name="datetime" placeholder="datetime" id="" required>
+                            <input type="number" name="number" placeholder="phone number here" id="" required>
                             </div>
-                            <textarea name=""  id="" required placeholder="write text"></textarea> <br>
+                            <textarea name=""  id="textarea" required placeholder="write text"></textarea> <br>
                             <div class="form_container">
 
                             <input type="submit" name="" id="submit">
