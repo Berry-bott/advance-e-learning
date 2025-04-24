@@ -32,7 +32,7 @@ servicesCard.forEach((card) => {
     servicesCardHtml += html;
 
 });
-document.querySelector('.services-cont .display ').innerHTML = servicesCardHtml; // output for services card
+document.querySelector('.services-cont .display ').innerHTML = servicesCardHtml; // output for services card on the index page
 
 
 

@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     const swiper = new Swiper('.swiper', {
       loop: true,          // Enables infinite scrolling
       autoplay: {
-        delay: 20000,       // Auto slides every 3 seconds
+        delay: 5000,       // Auto slides every 3 seconds
       },
       pagination: {
         el: '.swiper-pagination',
@@ -18,7 +18,6 @@ document.addEventListener('DOMContentLoaded',()=>{
       
       breakpoints: {
         850: { slidesPerView: 3 },
-        // 850: { slidesPerView: 2 },
         450: { slidesPerView: 2 },
         1024: { slidesPerView: 4},
         },

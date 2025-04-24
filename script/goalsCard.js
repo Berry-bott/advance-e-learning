@@ -1,12 +1,5 @@
 let  goalsCard = [
-    // {
-    //     headTextRow:`Curious!`,
-    //     bodyTextRow:`Learning is who we are -- inside and outside. One reason we're so motivated to continue to open up
-    //                 learning worldwide is because we recognize the power it has fuel into the advance e-learning
-    //                 platform. We never stop evolving, and neither will you give up on your dreams.
-    //                 Join Advanced e-learning to make your dreams realistic.`,
-      
-    // },   
+   
     {
         headTextRow:`Inclusive.`,
         bodyTextRow:`When people feel supported everyone benefits. We know that thing doesn't just happen, but we're

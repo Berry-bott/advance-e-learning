@@ -4,33 +4,28 @@
     box-sizing: border-box;
 }
 .online_courses{
-    /* padding: 1rem 0;  */
-    /* display: flex; */
     justify-content: center;
-    /* align-items: center; */
-    /* margin-bottom: -4rem; */
     position: relative;
     height: 100vh !important;
 
 }
 .online_courses_img{
-    /* display: flex; */
+    position: relative;
 }
 .online_courses_img img{
+    position: absolute;
+    top: 4rem;
     width: 100%; 
     height: 100vh !important;
-    /* height: 500px; */
     object-fit: cover;
 }
-
-
-
-
 
 .contact_info {
     position: absolute;
     bottom: 0;
     right: 1rem;
+    background-color: rgba(0,0,0,0.10);
+    filter: blur(0.2px);
 }
 
 
@@ -97,37 +92,35 @@ textarea {
         color: var(--white);
     }
 
-
-
-.online_courses_container{
+.card_container{
     padding: 6rem 0 !important;
 }
 
-.online_courses_text{
+.card_text{
     width: 70%;
     margin:0  auto;
 }
 
-.online_courses_text h1{
+.card_text h1{
     padding: 2rem 0;
     font-weight: 900;
 }
 
-.online_courses_text p{
+.card_text p{
     padding: 1rem 0;
+    font-size: 20px;
 }
 
 @media screen and (max-width:700px) {
     .online_courses_img img{
-        height: 120vh !important;
+        height: 100vh !important;
+        top: 0 !important;
     }
 
+
     .contact_info{
-        /* width: 400px !important; */
         left: 1rem !important;
-        /* right: 0 !important;     */
-        /* top: 8rem !important; */
-        bottom: -8rem !important;
+        bottom: 0 !important;
     }
     .form_container_info{
         grid-template-columns: 1fr !important;
@@ -145,11 +138,11 @@ textarea {
 
     }
 
-    .online_courses_container{
-        padding: 8rem 0 !important;
+    .card_container{
+        padding: 1rem 0 3rem 0 !important;
     }
 
-    .online_courses_text{
+    .card_text{
         width: 85%;
         margin:0 auto;
     }
